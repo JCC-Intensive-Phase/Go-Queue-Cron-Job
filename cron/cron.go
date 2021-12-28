@@ -55,7 +55,7 @@ func main() {
 
 	// Setup scheduled request sending operation
 	// similar to crontab -e
-	sched.Cron("32 16 27 12 *").Do(SendRequest)
+	sched.Cron("13 10 28 12 *").Do(SendRequest)
 
 	// start cron
 	sched.StartBlocking()
